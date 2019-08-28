@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="jeux.css"/>
+
+    <title>Deviner un nombre</title>
+  </head>
+
+  <body>
+    <h1>Deviner un nombre</h1>
+
+    <p>Nous avons généré un nombre aléatoire entre 1 et 100, tentez de le deviner en 10 tours maximum. Pour chaque tentative, nous vous dirons si votre estimation est trop ou pas assez élevée.</p>
+
+    <div class="form">
+      <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <div><input in ="refresh" type="button" onclick='window.location.roload(false)' value="Relancer le Jeu"/></div>
+  </body>
+
+    <script type="text/javascript" src="jeux.js"> 
+
+</script>
+
+</html>
